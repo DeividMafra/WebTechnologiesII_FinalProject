@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $.fn.shuffle = function () {
-        return this.each(function () {
+    $.fn.shuffle = function() {
+        return this.each(function() {
             var items = $(this).children();
 
             return (items.length) ?
@@ -10,9 +10,9 @@ $(document).ready(function () {
         });
     }
 
-    $.fn.validate = function () {
+    $.fn.validate = function() {
         var res = false;
-        this.each(function () {
+        this.each(function() {
             var arr = $(this).children();
             res = ((arr[0].innerHTML == "1") &&
                 (arr[1].innerHTML == "2") &&
@@ -24,7 +24,7 @@ $(document).ready(function () {
         return res;
     }
 
-    $.shuffle = function (arr, obj) {
+    $.shuffle = function(arr, obj) {
         for (
             var j, x, i = arr.length; i; j = parseInt(Math.random() * i),
             x = arr[--i], arr[i] = arr[j], arr[j] = x
@@ -33,12 +33,12 @@ $(document).ready(function () {
         else return arr;
     }
 
-    $(function (e) {
+    $(function(e) {
         $("#sortable").sortable();
         $("#sortable").disableSelection();
         $('ul').shuffle();
 
-        $(".login100-form-btn").click(function () {
+        $(".login100-form-btn").click(function() {
             var userNameAndPassword = {
                 Sherwayne: "1234",
                 Deivid: "1234",
