@@ -2189,3 +2189,17 @@ th {
 .grey.light {
 	background-color: #bdbdbd;
 }
+
+
+.left-about {
+	float: left;
+	margin: 0 auto;
+	width: 44%;
+	padding-left: 0.5em;
+}
+
+.right-about {
+	float: right;
+	margin: 0 auto;
+	width: 44%;
+}
