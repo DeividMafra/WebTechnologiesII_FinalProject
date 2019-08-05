@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../css/login/css/util.css">
     <link rel="stylesheet" type="text/css" href="../css/login/css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/font-awesome.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="../css/captcha/numberCaptcha.css"> -->
     <!-- <script src="../scripts/captcha/captchaValidate.js"></script> -->
     <script src="../"></script>
@@ -25,11 +27,175 @@
 </table> -->
 
 <body>
+
+    <div class="container-login100">
+        <div class="card">
+            <div class="card-header text-center">Register</div>
+
+            <div class="card-body">
+                <p class="text-center">All fields below are required unless specified.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap validate-input" data-validate="Username is required">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                                aria-label="Username" aria-describedby="addon-wrapping" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group col-lg-6">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping">***</span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping">***</span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Repeat Password"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+
+                            <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+
+                            <input type="text" class="form-control" placeholder="Last Name" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+
+                            <input type="text" class="form-control" placeholder="Location (Optional)"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">+/-</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>-- Choose Gender --</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">3/4</option>
+                                <option value="4">1/2</option>
+                                <option value="5">I don't know</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+
+                            <input type="text" class="form-control" placeholder="Country" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Birthday</label>
+                            </div>
+
+                            <input class="form-control" placeholder="Birthday" type="date" value=""
+                                id="example-date-input">
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <button type="button" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="limiter">
         <!-- <div class="container-login100" style="background-image: url('../images/bg-01.jpg');"> -->
+
+
         <div class="container-login100">
+
             <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
-                <form class="login100-form validate-form flex-sb flex-w" onsubmit="return false">
+                <div class="row">
+                    <span class="login100-form-title p-b-53">
+                        Register
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="p-t-31 p-b-9">
+                            <span class="txt1">
+                                Username
+                            </span>
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Username is required">
+                            <input id="username" class="input100" type="text" name="username">
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="p-t-31 p-b-9">
+                            <span class="txt1">
+                                Email
+                            </span>
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Email is required">
+                            <input id="email" class="input100" type="text" name="email">
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
+                </div>
+                <form class="login100-form validate-form flex-sb flex-w">
                     <span class="login100-form-title p-b-53">
                         Register
                     </span>
@@ -66,7 +232,7 @@
                     </div>
 
                     <div class="container-login100-form-btn m-t-17">
-                        <button class="login100-form-btn" id="regist" name="regist" >
+                        <button class="login100-form-btn" id="regist" name="regist">
                             Register
                         </button>
                     </div>
