@@ -31,130 +31,133 @@
     <div class="container-login100">
         <div class="card">
             <div class="card-header text-center">Register</div>
-
-            <div class="card-body">
-                <p class="text-center">All fields below are required unless specified.</p>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap validate-input" data-validate="Username is required">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon-wrapping">@</span>
+            <form class="login100-form validate-form flex-sb flex-w">
+                <div class="card-body">
+                    <p class="text-center">All fields below are required unless specified.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap validate-input" data-validate="Username is required">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                </div>
+                                <input type="text" class="form-control input100" id="username" name="username"
+                                    placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"
+                                    required>
+                                    <span class="focus-input100"></span>
                             </div>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Username"
-                                aria-label="Username" aria-describedby="addon-wrapping" required>
                         </div>
-                    </div>
 
-                    <div class="input-group col-lg-6">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
-                            aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon-wrapping">***</span>
+                        <div class="input-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Email" id="email" name="email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Password" aria-label="Username"
-                                aria-describedby="addon-wrapping">
                         </div>
                     </div>
-
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon-wrapping">***</span>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">***</span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="passwd" name="passwd">
                             </div>
-                            <input type="password" class="form-control" placeholder="Repeat Password"
-                                aria-label="Username" aria-describedby="addon-wrapping">
                         </div>
-                    </div>
-                </div>
-                <br>
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-
-                            <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
-                                aria-describedby="addon-wrapping">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-
-                            <input type="text" class="form-control" placeholder="Last Name" aria-label="Username"
-                                aria-describedby="addon-wrapping">
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-
-                            <input type="text" class="form-control" placeholder="Location (Optional)"
-                                aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-
-                            <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect01">+/-</label>
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">***</span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Repeat Password" id="passwd2" name="passwd2"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                                <option selected>-- Choose Gender --</option>
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
-                                <option value="3">3/4</option>
-                                <option value="4">1/2</option>
-                                <option value="5">I don't know</option>
-                            </select>
-
                         </div>
                     </div>
-                </div>
+                    <br>
 
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
 
-                            <input type="text" class="form-control" placeholder="Country" aria-label="Username"
-                                aria-describedby="addon-wrapping">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="input-group flex-nowrap">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect01">Birthday</label>
+                                <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="fname" name="fname">
                             </div>
+                        </div>
 
-                            <input class="form-control" placeholder="Birthday" type="date" value=""
-                                id="example-date-input">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
 
-
+                                <input type="text" class="form-control" placeholder="Last Name" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="lname" name="lname">
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
 
-                <br>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <button type="button" class="btn btn-primary">Register</button>
+                                <input type="text" class="form-control" placeholder="Location (Optional)"
+                                    aria-label="Username" aria-describedby="addon-wrapping" id="location" name="location">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">+/-</label>
+                                </div>
+                                <select class="custom-select" id="gender" name="gender">
+                                    <option value="0" selected>-- Choose Gender --</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">3/4</option>
+                                    <option value="4">1/2</option>
+                                    <option value="5">I don't know</option>
+                                </select>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-            </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <input type="text" class="form-control" placeholder="Country" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="country" name="country">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Birthday</label>
+                                </div>
+
+                                <input class="form-control" placeholder="Birthday" type="date" value=""
+                                    id="dob" name="dob">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <button type="button" class="btn btn-primary" id="regist" name="regist">Register</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
         </div>
     </div>
 
@@ -178,7 +181,7 @@
                             </span>
                         </div>
                         <div class="wrap-input100 validate-input" data-validate="Username is required">
-                            <input id="username" class="input100" type="text" name="username">
+                            <input class="input100" type="text" >
                             <span class="focus-input100"></span>
                         </div>
                     </div>
@@ -190,7 +193,7 @@
                             </span>
                         </div>
                         <div class="wrap-input100 validate-input" data-validate="Email is required">
-                            <input id="email" class="input100" type="text" name="email">
+                            <input class="input100" type="text">
                             <span class="focus-input100"></span>
                         </div>
                     </div>
@@ -206,7 +209,7 @@
                         </span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Username is required">
-                        <input id="username" class="input100" type="text" name="username">
+                        <input class="input100" type="text">
                         <span class="focus-input100"></span>
                     </div>
 
@@ -217,7 +220,7 @@
 
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <input id="password" class="input100" type="password" name="pass">
+                        <input class="input100" type="password" >
                         <span class="focus-input100"></span>
                     </div>
 
@@ -227,12 +230,12 @@
                         </span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Email is required">
-                        <input id="email" class="input100" type="text" name="email">
+                        <input class="input100" type="text" >
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="container-login100-form-btn m-t-17">
-                        <button class="login100-form-btn" id="regist" name="regist">
+                        <button class="login100-form-btn" >
                             Register
                         </button>
                     </div>
