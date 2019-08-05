@@ -54,6 +54,7 @@ $(document).ready(function() {
                 if (username.toLowerCase() == key.toString().toLocaleLowerCase() && password == value && isUser == false) {
                     isUser = true;
                     if ($('ul').validate() && isUser == true) {
+                        //$("body").load("../../WebTechnologiesII_FinalProject/Index.html");
                         window.location.href = "../../WebTechnologiesII_FinalProject/Index.html";
                         break;
                     } else {
