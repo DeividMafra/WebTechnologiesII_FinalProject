@@ -51,8 +51,6 @@ $(document).ready(function() {
             for (var key in userNameAndPassword) {
                 var value = userNameAndPassword[key];
 
-                //alert(username.toLowerCase() + " " + password);
-
                 if (username.toLowerCase() == key.toString().toLocaleLowerCase() && password == value && isUser == false) {
                     isUser = true;
                     if ($('ul').validate() && isUser == true) {
@@ -63,18 +61,11 @@ $(document).ready(function() {
                         alert("Please submit correct screen captcha.");
                         break;
                     }
-                } else {
-                    alert("Username or password is incorrect");
-                    break;
                 }
-
-
-
-
             }
-
-
-
+            if (isUser == false) {
+                alert("Username or password is incorrect");
+            }
             //($('ul').validate()) ? alert("Yeah, you are a human!"): alert("No, you are not a human!");
         });
     });
