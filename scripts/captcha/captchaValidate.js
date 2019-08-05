@@ -33,13 +33,49 @@ $(document).ready(function() {
         else return arr;
     }
 
-    $(function() {
+    $(function(e) {
         $("#sortable").sortable();
         $("#sortable").disableSelection();
         $('ul').shuffle();
 
         $(".login100-form-btn").click(function() {
-            ($('ul').validate()) ? alert("Yeah, you are a human!"): alert("No, you are not a human!");
+            var userNameAndPassword = {
+                Sherwayne: "1234",
+                Deivid: "1234",
+                Diego: "1234"
+            };
+
+            var isUser = false;
+            var username = $("#username").val();
+            var password = $("#password").val();
+            for (var key in userNameAndPassword) {
+                var value = userNameAndPassword[key];
+
+                //alert(username.toLowerCase() + " " + password);
+
+                if (username.toLowerCase() == key.toString().toLocaleLowerCase() && password == value && isUser == false) {
+                    isUser = true;
+                    if ($('ul').validate() && isUser == true) {
+                        window.location.href = "../../WebTechnologiesII_FinalProject/Index.html";
+                        break;
+                    } else {
+
+                        alert("Please submit correct screen captcha.");
+                        break;
+                    }
+                } else {
+                    alert("Username or password is incorrect");
+                    break;
+                }
+
+
+
+
+            }
+
+
+
+            //($('ul').validate()) ? alert("Yeah, you are a human!"): alert("No, you are not a human!");
         });
     });
 
