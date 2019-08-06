@@ -82,6 +82,11 @@ $(document).ready(function() {
     //     $(this).addClass('highlight');
     // });
 
+    $(".frpghome,.frpgusedcars,.frpgservices,.frpgaboutus,.frpgcontactus").click(function() {
+        alert("you have to be logged in, to access this link");
+        window.location = "../../views/Login.html";
+    });
+
     $(window).resize(function() { //performs functionality based on screen resize event
         var pageIdent = $("#pageIdent").val();
 
@@ -95,8 +100,12 @@ $(document).ready(function() {
 
     });
 
-    $("#login-btn,#logout").click(function() {
+    $("#login-btn").click(function() {
         window.location = "../../views/Login.html";
+    });
+
+    $(".logout").click(function() {
+        window.location = "../../views/FrontPage.html";
     });
 
 });

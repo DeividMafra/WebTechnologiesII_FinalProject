@@ -36,9 +36,9 @@
                 <p style="font-size:40px;margin:0px">Just Cars Dealership</p>
                 <p style="font-size:20px;margin:10px 0px 10px 0px">Number one stop for buying and servicing cars</p>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.979196194029!2d-79.33806968449835!3d43.77329067911739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2d6fc6ca7f5d%3A0x2a12502c1cd1e815!2sLambton+College!5e0!3m2!1sen!2sca!4v1555044904355!5m2!1sen!2sca"
-                    style="border:0; width:40%;height:350px;" allowfullscreen></iframe>
-
+                <iframe id="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.979196194029!2d-79.33806968449835!3d43.77329067911739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2d6fc6ca7f5d%3A0x2a12502c1cd1e815!2sLambton+College!5e0!3m2!1sen!2sca!4v1555044904355!5m2!1sen!2sca"
+                    allowfullscreen></iframe>
+                <!-- style="border:0; width:40%;height:350px;"  -->
                 <h3> Hours of Operation</h3>
                 <p>Monday to Friday || 9am to 4pm</p>
             </div>
@@ -101,7 +101,7 @@
             <p>Just Cars Auto Dealership, is a long time member of OMVIC, the UCDA, Dealerrater.ca, and the Better Business Bureau. With over 25 years of experience selling great cars to people all over Canada, our dedicated sales staff will ensure that
                 your auto shopping experience is met to the highest standards in the industry. We strive to make every auto purchase experience fun, easy, educated and financially advantageous so don’t hesitate to check us out in person and see why we
                 stand out amongst the rest! Give us a call or drop by and allow our friendly sales staff to put you in your ideal car, truck or SUV today!</p>
-            <div class="row" style="font-size:20px;">
+            <div id="frpgadd" class="row" style="font-size:20px;">
                 <div class="column" style="background-color:white;color:black;height:100px">
 
                     <p>We have the largest car dealership</p>
@@ -191,10 +191,11 @@
         </div>
         <div id="navbar">
             <div class="topnav" id="mainNav">
-                <a href="#home" id="home" class="home main">Home</a>
-                <a href="#products" id="products" class="products">Products</a>
-                <a href="#aboutus" id="aboutus" class="aboutus">About Us</a>
-                <a href="#contactus" id="contactus" class="contactus">Contact Us</a>
+                <a href="#frpghome" id="frpghome" class="frpghome main">Home</a>
+                <a href="#frpgusedcars" id="frpgusedcars" class="frpgusedcars">Used Cars</a>
+                <a href="#frpgservices" id="frpgservices" class="frpgservices">Services</a>
+                <a href="#frpgaboutus" id="frpgaboutus" class="frpgaboutus">About Us</a>
+                <a href="#frpgcontactus" id="frpgcontactus" class="frpgcontactus">Contact Us</a>
                 <!--<i class="icon fa fa-bars " onclick="myFunction() "></i>-->
                 <a href="#" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -202,9 +203,10 @@
             </div>
         </div>
         <div class="mobile_nav_bar">
-            <a href="#home" id="home" class="home main">Home</a>
-            <a href="#products" id="products" class="products">Products</a>
-            <a href="#aboutus" id="aboutus" class="aboutus">About Us</a>
+            <a href="#home" id="home" class="frpghome main">Home</a>
+            <a href="#usedcars" id="usedcars" class="frpgusedcars">Used Cars</a>
+            <a href="#services" id="services" class="frpgservices">Services</a>
+            <a href="#aboutus" id="aboutus" class="frpgaboutus">About Us</a>
             <a href="#contactus" id="contactus" class="contactus">Contact Us</a>
         </div>
         <footer class="footer">
