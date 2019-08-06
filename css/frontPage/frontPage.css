@@ -239,6 +239,9 @@
             #car-search {
                 display: block;
             }
+            #frpgadd {
+                display: block;
+            }
             .column {
                 flex: 25%;
                 max-width: 25%;
@@ -293,6 +296,9 @@
                 height: 250px;
             }
             #car-search {
+                display: block;
+            }
+            #frpgadd {
                 display: block;
             }
             #navbar {
