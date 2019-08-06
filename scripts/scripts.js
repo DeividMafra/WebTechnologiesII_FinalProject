@@ -104,6 +104,10 @@ $(document).ready(function() {
         window.location = "../../views/Login.html";
     });
 
+    $("#register-btn").click(function() {
+        window.location = "../../views/register.html";
+    });
+
     $(".logout").click(function() {
         window.location = "../../views/FrontPage.html";
     });
