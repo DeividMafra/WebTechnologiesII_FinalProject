@@ -1,39 +1,32 @@
 $(document).ready(function () {
 
-    $("table tr td").click(function(e){
+    $("table tr td").click(function (e) {
         //console.log(e.getAttribute());
 
         //console.log($("table tr td img").html());
     });
 
-    $(".r_LgG7One").click(function(e){
+
+
+    $(".r_I20").click(function (e) {
         e.preventDefault();
-        goPage("LgG7One");
+        goPage("HyundaiI20");
     });
 
-    $(".r_galaxyS10").click(function(e){
-        e.preventDefault();        
-        goPage("galaxyS10");
-    });
-
-    $(".r_pixel3").click(function(e){
-        e.preventDefault();        
-        goPage("pixel3");
-    });
-
-    $(".r_HuaweiP20").click(function(e){
-        e.preventDefault();        
-        goPage("HuaweiP20");
-    });
-
-    $(".r_iPhoneXR").click(function(e){
+    $(".r_TAvalon").click(function (e) {
         e.preventDefault();
-        goPage("iPhoneXR");
+        goPage("TAvalon");
     });
 
-    $(".r_iPhone6").click(function(e){
+
+    $(".r_AudiTron").click(function (e) {
         e.preventDefault();
-        goPage("iPhone6");
+        goPage("AudiTron");
+    });
+
+    $(".r_Ffocus").click(function (e) {
+        e.preventDefault();
+        goPage("Ffocus");
     });
 
     function goPage(identifier) {
