@@ -57,6 +57,10 @@ $(document).ready(function() {
 
     });
 
+    $("#login-btn").click(function() {
+        window.location = "../../views/Login.html";
+    });
+
 });
 
 
