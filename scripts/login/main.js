@@ -49,7 +49,4 @@ $(document).ready(function() {
 
         $(thisAlert).removeClass('alert-validate');
     }
-
-
-
 });

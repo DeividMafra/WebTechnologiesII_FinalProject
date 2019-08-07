@@ -82,9 +82,12 @@ $(document).ready(function() {
     //     $(this).addClass('highlight');
     // });
 
-    $(".frpghome,.frpgusedcars,.frpgservices,.frpgaboutus,.frpgcontactus").click(function() {
-        alert("you have to be logged in, to access this link");
-        window.location = "../../views/Login.html";
+    $(".frpghome,.frpgusedcars,.frpgservices,.frpgaboutus,.frpgcontactus").click(function(e) {
+        //alert("you have to be logged in, to access this link");
+        notifyError("You have to be logged in, to access this link");
+        //window.location = "../../views/Login.html";
+        //e.PreventDefault();
+
     });
 
     $(window).resize(function() { //performs functionality based on screen resize event
@@ -123,16 +126,6 @@ function mobileDropDown() {
     }
 }
 
-function DesktopDropDown() {
-    if (window.matchMedia("(min-width: 769px)").matches) {
-        var x = document.getElementById("mainNav");
-        if (x.className === "responsive") {
-            x.className += "topnav";
-        } else {
-            x.className = "responsive";
-        }
-    }
-}
 /**
  * Get the button, and when the user clicks on it, execute navButton function
  * 
@@ -143,26 +136,3 @@ function DesktopDropDown() {
 function navButton() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
-/**
- * navButton toggles between adding and removing the show class,
- * which is used to hide and show the dropdown content
- * 
- * date: 13/03/2019
- * author: Deivid Mafra
- **/
-
-
-
-// window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var i;
-//         for (i = 0; i < dropdowns.length; i++) {
-//             var openDropdown = dropdowns[i];
-//             if (openDropdown.classList.contains('show')) {
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }

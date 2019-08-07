@@ -58,13 +58,15 @@ $(document).ready(function() {
                         break;
                     } else {
 
-                        alert("Please submit correct screen captcha.");
+                        //alert("Please submit correct screen captcha.");
+                        notifyError("Please submit correct screen captcha.");
                         break;
                     }
                 }
             }
             if (isUser == false) {
-                alert("Username or password is incorrect");
+                //alert("Username or password is incorrect");
+                notifyError("Username or password is incorrect");
             }
             //($('ul').validate()) ? alert("Yeah, you are a human!"): alert("No, you are not a human!");
         });
