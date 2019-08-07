@@ -84,6 +84,7 @@ $(document).ready(function() {
 
     $(".frpghome,.frpgusedcars,.frpgservices,.frpgaboutus,.frpgcontactus").click(function(e) {
         //alert("you have to be logged in, to access this link");
+
         notifyError("You have to be logged in, to access this link");
         //window.location = "../../views/Login.html";
         //e.PreventDefault();
